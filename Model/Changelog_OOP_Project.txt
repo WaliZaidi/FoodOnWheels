@@ -1,0 +1,211 @@
+//create the user class as an interface
+//create the admin class
+//create the file operations class (remember to use ";" as a separator in any file)
+//make the login function an abstract function (with username and password)
+//any implementation of the function needs a username and password as input
+//may change parameters if needed, and may return boolean (planned)
+//add in the display menu as a function
+//start work in the admin class
+//make the menu for the admin class first, we can then work on implementing stuff from there
+//menu made and inputs validated
+//make the file operations file, and include the files needed
+//we have the customer, rider, vendor and delivery files
+//customer to store customer details
+//rider to store rider data and orders
+//vendor to store the details of the foods
+//delivery to store the logs and status of the deliveries
+//new day ~\(≧▽≦)/~
+//make the customer read and write function, and add in the customer class as well
+//we need the customer class so that our code doesn't die in the middle of running
+//make it so that the write function takes in an arraylist and converts it to array
+//this is to make it easier for the coder (me)
+//take input as the Customer variable, that makes it easier to send
+//make the read customer function, which reads the files into an array, and then converts them into arraylist
+//returns array list
+//make the getfilelength function, for getting the number of index for the array
+//make the rider, vendor and other things
+//add in their read and write file functions
+//done
+//check for all the functions : customer : done | Rider : done | Vendor : done | Admin : Pending
+//now what?
+//we make the delivery file system ofc
+//do we need an order class?
+//nah, we can probably just generate it
+//create a number generator in the user class
+//realize that fileoperations cant implement user class (っ °Д °;)っ
+//make a generateID function in the fileoperation class
+//collate the data that we need for the order
+//we need customer ID, riderID, vendorID, foodID?
+//we need food details as well
+//anyway
+//figure that out later
+//for now we make the deliveryInfo file
+//also include the delivery states of the order
+//stuck on that, now we work on the admin class for now
+//realize that we need to implement a remove function as well
+//do that
+//make a food detail class for vendor
+//new day ~\(≧▽≦)/~
+//work on the file handling and management system again
+//make the single customer function
+//change the reading system to only get the customer ID, and compare
+//then we read the rest of the stuff into the cusArr
+//done
+//add in update file function for customer
+//gets an arraylist, converts to array, and then writes it down into the file
+//much simpler that using an arraylist itself
+//new day ~\(≧▽≦)/~
+//make the customer class functions
+//we are going to start with view food details, since that is at the top
+//we're gonna make the entire thing on console, and then link to controller at the end
+//yeahhhhh, before that we need to make the food id stuff
+//starting with add food details
+//make a writer function in that file for it
+//and a reading one, as well as individual reading one
+//done
+//we revise what needs to be where in the customer menu
+//make the view food details function, which is going to be subset to the ordering function
+//note to change the main customer menu as well
+//remove the user functions from the user class, they are not worth it
+//they do not support method overriding with parameters, so its not nice
+//might add them later, but for now they are gone
+//using normal functions for add, delete and view
+//login already exists
+//moving on to the next
+//making the place order functionality
+//start in the customer class
+//use the view food details function
+//making the new order system
+//make a search food detail function to help with that
+//continue to make the new order system
+//get stuck on the new order passover to the file handling class
+//fix that
+//debate on making an order class, but then pass on it
+//make the order class
+//associate it with the customer class
+//the order class will act as our cart
+//the food details will be loaded into the order arraylist and then we use it from there
+//make the rider class more valuable
+//add in the name and the phone number of the rider as variables
+//after that
+//now we work on the customer functions
+//done
+//we made all the rest of the customer functions
+//now moving on to the rider functions
+//we make the add new rider function
+//make a try catch and pass it to file handling
+//in file handling, add the details to write to the file
+//add in a new boolean, orderTaken to the Rider class
+//we have made all the rider functions
+//made the view orders class
+//as well as making changes to the write and read status functions
+//there are now quite a few states that exist
+//pending
+//processing
+//ready
+//collected
+//delivered
+//these are the main ones that we use, all in lowercase
+//we made all the things in the customer login menu
+//now to the add customer menu
+//submitted, but doesnt work properly
+//sad
+//maybe do it again
+
+//after submission
+
+//do it again
+//although there isnt going to be any marks for this, but we can look at this to feel better about ourselves
+//so first we need to decide if this is going to be GUI based or not
+//do i think that i can make all of the functions for this program, and integrate them into a GUI
+//first im gonna check the condition of the gui classes as a whole, dont want no bad stuff happening
+//yeahhhhh
+//the gui classes are bad
+//plus the overall architecture is also sub-par
+//not built according to the exact standards, plus its not good looking, as well as redundant
+//so we remove the gui classes, and now we focus on using JOptionPane where we need input, that way, if we have time
+we can connect the damn things together without that much fuss
+//start entire new main code
+//this is either going to pay off massively, or this is going to blow up in my face
+//ahh well
+//eh, might as well
+
+//so made the main class
+//added in the arraylist declarations
+//made the main menu thingy, so that is nice
+//furthermore, we also added in an input pane to get input
+//needed to parse the string, so did that
+//now to perform operations based on the input from the user (may later make exception class to deal with the null exceptions
+//make the admin call block
+//in that, set up the loop for the admin menu
+//after that, we check for the menu, use a constructor to get the menu from admin, use a option pane
+//while making this, realize how badly you have done previous code
+//be dead inside  (X﹏X)
+//moving on
+//make the login feature in the admin menu
+//follow through in the admin class
+//return boolean to check successful login
+//realize that you need login first, then the menu will show
+//realize that you are stupid...
+//get to rework the code
+//ah yes, took a 5 min water break, now to make a login menu function specifically for the login of admin
+//have the login take place within the admin class
+//change the return type for the login function from int to boolean
+//change the loops in the main class to reflect that
+//use an if else statement to deal with the login boolean return type
+//after that we get the real admin menu, and use a while loop with an if else to show that it works
+//run a dry test, everything works so far, so that's good
+//now on to the main functionality of the admin
+//first we see that we need to manage the vendors
+//that means add, remove and edit
+//so make a menu for that
+//use fancy text block, as suggested by IntelliJ
+//moving on
+//in the main, add yet another if else
+//to add a new vendor, we need to make a add new vendor function in vendors class
+//then we can direct call file op and pass it the vendor object from add new vendor
+//add it to the vendor array list as well
+//add in confirmation message
+//after that, we move onto delete vendor
+//just get id and remove it from the array list, and then update vendors
+//we need to rewrite vendor writer and reader, plus also make a vendor updater
+//make that
+//now we just search for the id and remove from arraylist, and pass that to update vendor, which writes the contents of
+arraylist into the file
+//easy
+//now onto edit vendors
+//copy the file function from the customers function in the file handling class
+//my mind is losing sense
+//but must go on
+//ahh yes i was stuck on how to pass a vendor object to edit vendor
+//made a new edit vendor function in vendor class as well, to get input from the user
+//oh right, i can pass and assign the ID
+//noice
+//now we go into managing the food details, copy paste and change the variable names
+//add a function to add new food
+//write the function that uses that
+//then we move onto remove food
+//for that we need to make the update food function
+//so go to file handling and then make it there
+//also, i've had around 2 litres of coffee at this point
+//and i'm starting to feel the caffeine crash
+//anyway
+//make the food editing thingy in the food class
+//then follow through with it in the file op class
+//done
+//catch a bug in the vendor thing as well, so that's good
+//doing the same thing with vendor and food, but with customer
+//not doing rider
+//annoying ^
+
+//moving onto customer features after this
+//make the basic outline for the customer menu in main
+//add the customer login in customer class
+//link that with the login function already there
+//then we get to narrowing down the customer menu
+//since there are too many inefficiencies
+//now for the first, we make the see food details, as well as ordering within the same function
+//first we show the vendors
+//choose from there
+//then we show the food details
+//
